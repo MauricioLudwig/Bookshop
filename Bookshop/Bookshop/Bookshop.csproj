@@ -43,12 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Lists.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="GUI\Menus.cs" />
+    <Compile Include="GUI\UI.cs" />
+    <Compile Include="Managers\PrintManager.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Repositories\BookRepository.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Models\ComicBook.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Repositories\Interface\IBookRepository.cs" />
+    <Compile Include="Models\Magazine.cs" />
+    <Compile Include="Models\Abstract\Print.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
