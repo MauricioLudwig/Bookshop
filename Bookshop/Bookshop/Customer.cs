@@ -13,5 +13,18 @@ namespace Bookshop
         {
             ShoppingCart = new List<Print>();
         }
+
+        public void ShowShoppingCart()
+        {
+
+            foreach (var print in ShoppingCart)
+            {
+                Console.WriteLine();
+                Console.WriteLine(print.PrintParameters());
+                Console.WriteLine(print.PrintValues());
+            }
+
+            Console.ReadKey();
+        }
     }
 }

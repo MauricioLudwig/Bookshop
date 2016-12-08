@@ -30,7 +30,7 @@ namespace Bookshop
                 {
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
-                        printMgr.Buy();
+                        Buy();
                         break;
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
@@ -42,7 +42,7 @@ namespace Bookshop
                         break;
                     case ConsoleKey.D4:
                     case ConsoleKey.NumPad4:
-                        // Search
+                        Search();
                         break;
                     case ConsoleKey.D5:
                     case ConsoleKey.NumPad5:
@@ -57,5 +57,66 @@ namespace Bookshop
             }
 
         }
+
+        private void Buy()
+        {
+
+            bool loop = true;
+
+            while (loop)
+            {
+
+                Console.Clear();
+                Menus.Buy();
+                var input = Console.ReadKey(true).Key;
+
+                switch (input)
+                {
+                    case ConsoleKey.D1:
+                    case ConsoleKey.NumPad1:
+                        printMgr.Buy();
+                        break;
+                    case ConsoleKey.D2:
+                    case ConsoleKey.NumPad2:
+                        printMgr.ShowCart();
+                        break;
+                    case ConsoleKey.D3:
+                    case ConsoleKey.NumPad3:
+                        loop = false;
+                        break;
+                }
+            }
+
+        }
+
+        private void Search()
+        {
+
+            bool loop = true;
+
+            while (loop)
+            {
+
+                Console.Clear();
+                Menus.Search();
+                var input = Console.ReadKey(true).Key;
+
+                switch (input)
+                {
+
+                    case ConsoleKey.D1:
+                    case ConsoleKey.NumPad1:
+                        break;
+                    case ConsoleKey.D2:
+                    case ConsoleKey.NumPad2:
+                        break;
+                    case ConsoleKey.D3:
+                    case ConsoleKey.NumPad3:
+                        loop = false;
+                        break;
+                }
+            }
+        }
+
     }
 }

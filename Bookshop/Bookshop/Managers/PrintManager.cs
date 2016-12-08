@@ -20,6 +20,11 @@ namespace Bookshop.Managers
             customer.ShoppingCart.Add(bookRepo.GetSingle(index));
         }
 
+        public void ShowCart()
+        {
+            customer.ShowShoppingCart();
+        }
+
         public void Add()
         {
             var newPrint = UI.AddPrint();

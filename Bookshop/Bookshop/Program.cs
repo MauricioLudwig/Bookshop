@@ -12,8 +12,6 @@ namespace Bookshop
         {
             var client = new Client();
             client.Start();
-
-            Console.ReadKey();
         }
     }
 }

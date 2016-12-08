@@ -31,5 +31,39 @@ namespace Bookshop.GUI
 
             return index;
         }
+
+        public static void Buy()
+        {
+            Console.WriteLine("1. Buy");
+            Console.WriteLine("2. Show Shopping Cart");
+            Console.WriteLine("3. Return");
+        }
+
+        public static void Search()
+        {
+            Console.WriteLine("1. Using LINQ");
+            Console.WriteLine("2. Using Delegates");
+            Console.WriteLine("3. Return");
+        }
+
+        public static void SearchWLINQ()
+        {
+            Console.WriteLine("1. Order by");
+            Console.WriteLine("2. Search by");
+            Console.WriteLine("3. Return");
+        }
+
+        public static void SearchBy()
+        {
+            Console.WriteLine("1. Author");
+            Console.WriteLine("2. Title");
+            Console.WriteLine("3. Price");
+            Console.WriteLine("4. Return");
+        }
+
+        public static void SearchWDelegates()
+        {
+
+        }
     }
 }
